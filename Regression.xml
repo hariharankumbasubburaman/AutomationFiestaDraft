@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite">
+
+<parameter name="env" value="qa" />
+<parameter name="browser" value="chrome" />
+	<test name="Test">
+		<classes>
+			<class name="tests.selenium.TC001_CreateIncident" />
+				<!-- <class name="tests.selenium.TC001_CreateIncident2" /> -->
+			
+			
+			<class name="tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium" />
+			<class name="tests.selenium.TC002_CreateIncidentAndGetFromRest" />
+			<class name="tests.rest.TC004_GetIncidents" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" verbose="5">
+
+	<parameter name="env" value="dev" />
+
+	<test name="SmokeTests">
+		<parameter name="group" value="smoke" />
+		<groups>
+			<run>
+				<include name="smoke" />
+			</run>
+		</groups>
+		<classes>
+			<class name="tests.selenium.TC001_CreateIncident" />
+			
+		</classes>
+	</test>
+
+	
+</suite> <!-- Suite -->

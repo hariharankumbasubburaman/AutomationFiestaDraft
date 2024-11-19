@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="93.484" tests="3" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Windows\Downloads\Makaia-master-updated\Makaia-master\target\test-classes;C:\Users\Windows\Downloads\Makaia-master-updated\Makaia-master\target\classes;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0-alpha-4\selenium-java-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-api\4.0.0-alpha-4\selenium-api-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0-alpha-4\selenium-chrome-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\com\google\auto\service\auto-service-annotations\1.0-rc6\auto-service-annotations-1.0-rc6.jar;C:\Users\Windows\.m2\repository\com\google\auto\service\auto-service\1.0-rc6\auto-service-1.0-rc6.jar;C:\Users\Windows\.m2\repository\com\google\auto\auto-common\0.10\auto-common-0.10.jar;C:\Users\Windows\.m2\repository\com\google\guava\guava\28.2-jre\guava-28.2-jre.jar;C:\Users\Windows\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Windows\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Windows\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Windows\.m2\repository\org\checkerframework\checker-qual\2.10.0\checker-qual-2.10.0.jar;C:\Users\Windows\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Windows\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.0.0-alpha-4\selenium-chromium-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-devtools\4.0.0-alpha-4\selenium-devtools-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-http\4.0.0-alpha-4\selenium-http-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-json\4.0.0-alpha-4\selenium-json-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0-alpha-4\selenium-edge-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-edgehtml-driver\4.0.0-alpha-4\selenium-edgehtml-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0-alpha-4\selenium-firefox-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.0.0-alpha-4\selenium-firefox-xpi-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0-alpha-4\selenium-ie-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.0.0-alpha-4\selenium-opera-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.0.0-alpha-4\selenium-remote-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\com\squareup\okhttp3\okhttp\4.3.0\okhttp-4.3.0.jar;C:\Users\Windows\.m2\repository\com\squareup\okio\okio\2.4.1\okio-2.4.1.jar;C:\Users\Windows\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.3.50\kotlin-stdlib-common-1.3.50.jar;C:\Users\Windows\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.3.61\kotlin-stdlib-1.3.61.jar;C:\Users\Windows\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Windows\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Windows\.m2\repository\io\netty\netty-handler\4.1.43.Final\netty-handler-4.1.43.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-common\4.1.43.Final\netty-common-4.1.43.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-buffer\4.1.43.Final\netty-buffer-4.1.43.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-transport\4.1.43.Final\netty-transport-4.1.43.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-codec\4.1.43.Final\netty-codec-4.1.43.Final.jar;C:\Users\Windows\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Windows\.m2\repository\io\opentracing\opentracing-api\0.33.0\opentracing-api-0.33.0.jar;C:\Users\Windows\.m2\repository\net\bytebuddy\byte-buddy\1.10.6\byte-buddy-1.10.6.jar;C:\Users\Windows\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Windows\.m2\repository\org\asynchttpclient\async-http-client\2.10.4\async-http-client-2.10.4.jar;C:\Users\Windows\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.10.4\async-http-client-netty-utils-2.10.4.jar;C:\Users\Windows\.m2\repository\io\netty\netty-codec-http\4.1.42.Final\netty-codec-http-4.1.42.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-codec-socks\4.1.42.Final\netty-codec-socks-4.1.42.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-handler-proxy\4.1.42.Final\netty-handler-proxy-4.1.42.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-transport-native-epoll\4.1.42.Final\netty-transport-native-epoll-4.1.42.Final-linux-x86_64.jar;C:\Users\Windows\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.42.Final\netty-transport-native-unix-common-4.1.42.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.42.Final\netty-transport-native-kqueue-4.1.42.Final-osx-x86_64.jar;C:\Users\Windows\.m2\repository\io\netty\netty-resolver-dns\4.1.42.Final\netty-resolver-dns-4.1.42.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-resolver\4.1.42.Final\netty-resolver-4.1.42.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-codec-dns\4.1.42.Final\netty-codec-dns-4.1.42.Final.jar;C:\Users\Windows\.m2\repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;C:\Users\Windows\.m2\repository\com\sun\activation\javax.activation\1.2.0\javax.activation-1.2.0.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0-alpha-4\selenium-safari-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0-alpha-4\selenium-support-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\io\rest-assured\rest-assured\4.3.0\rest-assured-4.3.0.jar;C:\Users\Windows\.m2\repository\org\codehaus\groovy\groovy\3.0.2\groovy-3.0.2.jar;C:\Users\Windows\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.2\groovy-xml-3.0.2.jar;C:\Users\Windows\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\Windows\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\Windows\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Windows\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\Windows\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Windows\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Windows\.m2\repository\io\rest-assured\json-path\4.3.0\json-path-4.3.0.jar;C:\Users\Windows\.m2\repository\org\codehaus\groovy\groovy-json\3.0.2\groovy-json-3.0.2.jar;C:\Users\Windows\.m2\repository\io\rest-assured\rest-assured-common\4.3.0\rest-assured-common-4.3.0.jar;C:\Users\Windows\.m2\repository\io\rest-assured\xml-path\4.3.0\xml-path-4.3.0.jar;C:\Users\Windows\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\Windows\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\Windows\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;C:\Users\Windows\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar;C:\Users\Windows\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\Windows\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\Windows\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\Windows\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Windows\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\Windows\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Windows\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Windows\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\Windows\.m2\repository\io\cucumber\cucumber-java\5.5.0\cucumber-java-5.5.0.jar;C:\Users\Windows\.m2\repository\io\cucumber\cucumber-core\5.5.0\cucumber-core-5.5.0.jar;C:\Users\Windows\.m2\repository\io\cucumber\cucumber-gherkin\5.5.0\cucumber-gherkin-5.5.0.jar;C:\Users\Windows\.m2\repository\io\cucumber\cucumber-gherkin-vintage\5.5.0\cucumber-gherkin-vintage-5.5.0.jar;C:\Users\Windows\.m2\repository\io\cucumber\tag-expressions\2.0.4\tag-expressions-2.0.4.jar;C:\Users\Windows\.m2\repository\io\cucumber\cucumber-expressions\8.3.1\cucumber-expressions-8.3.1.jar;C:\Users\Windows\.m2\repository\io\cucumber\datatable\3.3.0\datatable-3.3.0.jar;C:\Users\Windows\.m2\repository\io\cucumber\cucumber-plugin\5.5.0\cucumber-plugin-5.5.0.jar;C:\Users\Windows\.m2\repository\io\cucumber\docstring\5.5.0\docstring-5.5.0.jar;C:\Users\Windows\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Windows\.m2\repository\io\cucumber\cucumber-testng\5.5.0\cucumber-testng-5.5.0.jar;C:\Users\Windows\.m2\repository\net\minidev\json-smart\1.0.9\json-smart-1.0.9.jar;C:\Users\Windows\.m2\repository\org\apache\poi\poi\3.17\poi-3.17.jar;C:\Users\Windows\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Windows\.m2\repository\org\apache\commons\commons-collections4\4.1\commons-collections4-4.1.jar;C:\Users\Windows\.m2\repository\org\apache\poi\poi-ooxml\3.17\poi-ooxml-3.17.jar;C:\Users\Windows\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.17\poi-ooxml-schemas-3.17.jar;C:\Users\Windows\.m2\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;C:\Users\Windows\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\Windows\.m2\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;C:\Users\Windows\.m2\repository\com\aventstack\extentreports\3.1.3\extentreports-3.1.3.jar;C:\Users\Windows\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Windows\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Windows\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\Windows\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Windows\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;C:\Users\Windows\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;C:\Users\Windows\.m2\repository\commons-io\commons-io\1.3.2\commons-io-1.3.2.jar;C:\Users\Windows\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.22.0\surefire-testng-utils-2.22.0.jar;C:\Users\Windows\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.22.0\surefire-grouper-2.22.0.jar;"/>
+    <property name="java.vm.vendor" value="OpenLogic"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openlogic.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\Windows\AppData\Local\Temp\surefire975504808745529211\surefirebooter7822840997958941405.jar C:\Users\Windows\AppData\Local\Temp\surefire975504808745529211 2024-11-08T11-59-02_320-jvmRun1 surefire11578573857609097347tmp surefire_012083994700140434516tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Windows\Downloads\Makaia-master-updated\Makaia-master\target\test-classes;C:\Users\Windows\Downloads\Makaia-master-updated\Makaia-master\target\classes;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-java\4.0.0-alpha-4\selenium-java-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-api\4.0.0-alpha-4\selenium-api-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.0.0-alpha-4\selenium-chrome-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\com\google\auto\service\auto-service-annotations\1.0-rc6\auto-service-annotations-1.0-rc6.jar;C:\Users\Windows\.m2\repository\com\google\auto\service\auto-service\1.0-rc6\auto-service-1.0-rc6.jar;C:\Users\Windows\.m2\repository\com\google\auto\auto-common\0.10\auto-common-0.10.jar;C:\Users\Windows\.m2\repository\com\google\guava\guava\28.2-jre\guava-28.2-jre.jar;C:\Users\Windows\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Windows\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Windows\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Windows\.m2\repository\org\checkerframework\checker-qual\2.10.0\checker-qual-2.10.0.jar;C:\Users\Windows\.m2\repository\com\google\errorprone\error_prone_annotations\2.3.4\error_prone_annotations-2.3.4.jar;C:\Users\Windows\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.0.0-alpha-4\selenium-chromium-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-devtools\4.0.0-alpha-4\selenium-devtools-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-http\4.0.0-alpha-4\selenium-http-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-json\4.0.0-alpha-4\selenium-json-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.0.0-alpha-4\selenium-edge-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-edgehtml-driver\4.0.0-alpha-4\selenium-edgehtml-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.0.0-alpha-4\selenium-firefox-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-firefox-xpi-driver\4.0.0-alpha-4\selenium-firefox-xpi-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.0.0-alpha-4\selenium-ie-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.0.0-alpha-4\selenium-opera-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.0.0-alpha-4\selenium-remote-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\com\squareup\okhttp3\okhttp\4.3.0\okhttp-4.3.0.jar;C:\Users\Windows\.m2\repository\com\squareup\okio\okio\2.4.1\okio-2.4.1.jar;C:\Users\Windows\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib-common\1.3.50\kotlin-stdlib-common-1.3.50.jar;C:\Users\Windows\.m2\repository\org\jetbrains\kotlin\kotlin-stdlib\1.3.61\kotlin-stdlib-1.3.61.jar;C:\Users\Windows\.m2\repository\org\jetbrains\annotations\13.0\annotations-13.0.jar;C:\Users\Windows\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\Windows\.m2\repository\io\netty\netty-handler\4.1.43.Final\netty-handler-4.1.43.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-common\4.1.43.Final\netty-common-4.1.43.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-buffer\4.1.43.Final\netty-buffer-4.1.43.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-transport\4.1.43.Final\netty-transport-4.1.43.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-codec\4.1.43.Final\netty-codec-4.1.43.Final.jar;C:\Users\Windows\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Windows\.m2\repository\io\opentracing\opentracing-api\0.33.0\opentracing-api-0.33.0.jar;C:\Users\Windows\.m2\repository\net\bytebuddy\byte-buddy\1.10.6\byte-buddy-1.10.6.jar;C:\Users\Windows\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Windows\.m2\repository\org\asynchttpclient\async-http-client\2.10.4\async-http-client-2.10.4.jar;C:\Users\Windows\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.10.4\async-http-client-netty-utils-2.10.4.jar;C:\Users\Windows\.m2\repository\io\netty\netty-codec-http\4.1.42.Final\netty-codec-http-4.1.42.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-codec-socks\4.1.42.Final\netty-codec-socks-4.1.42.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-handler-proxy\4.1.42.Final\netty-handler-proxy-4.1.42.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-transport-native-epoll\4.1.42.Final\netty-transport-native-epoll-4.1.42.Final-linux-x86_64.jar;C:\Users\Windows\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.42.Final\netty-transport-native-unix-common-4.1.42.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.42.Final\netty-transport-native-kqueue-4.1.42.Final-osx-x86_64.jar;C:\Users\Windows\.m2\repository\io\netty\netty-resolver-dns\4.1.42.Final\netty-resolver-dns-4.1.42.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-resolver\4.1.42.Final\netty-resolver-4.1.42.Final.jar;C:\Users\Windows\.m2\repository\io\netty\netty-codec-dns\4.1.42.Final\netty-codec-dns-4.1.42.Final.jar;C:\Users\Windows\.m2\repository\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;C:\Users\Windows\.m2\repository\com\sun\activation\javax.activation\1.2.0\javax.activation-1.2.0.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.0.0-alpha-4\selenium-safari-driver-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\org\seleniumhq\selenium\selenium-support\4.0.0-alpha-4\selenium-support-4.0.0-alpha-4.jar;C:\Users\Windows\.m2\repository\io\rest-assured\rest-assured\4.3.0\rest-assured-4.3.0.jar;C:\Users\Windows\.m2\repository\org\codehaus\groovy\groovy\3.0.2\groovy-3.0.2.jar;C:\Users\Windows\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.2\groovy-xml-3.0.2.jar;C:\Users\Windows\.m2\repository\org\apache\httpcomponents\httpclient\4.5.3\httpclient-4.5.3.jar;C:\Users\Windows\.m2\repository\org\apache\httpcomponents\httpcore\4.4.6\httpcore-4.4.6.jar;C:\Users\Windows\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Windows\.m2\repository\org\apache\httpcomponents\httpmime\4.5.3\httpmime-4.5.3.jar;C:\Users\Windows\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\Windows\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Windows\.m2\repository\io\rest-assured\json-path\4.3.0\json-path-4.3.0.jar;C:\Users\Windows\.m2\repository\org\codehaus\groovy\groovy-json\3.0.2\groovy-json-3.0.2.jar;C:\Users\Windows\.m2\repository\io\rest-assured\rest-assured-common\4.3.0\rest-assured-common-4.3.0.jar;C:\Users\Windows\.m2\repository\io\rest-assured\xml-path\4.3.0\xml-path-4.3.0.jar;C:\Users\Windows\.m2\repository\org\apache\commons\commons-lang3\3.4\commons-lang3-3.4.jar;C:\Users\Windows\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\2.3.2\jakarta.xml.bind-api-2.3.2.jar;C:\Users\Windows\.m2\repository\jakarta\activation\jakarta.activation-api\1.2.1\jakarta.activation-api-1.2.1.jar;C:\Users\Windows\.m2\repository\com\sun\xml\bind\jaxb-osgi\2.3.0.1\jaxb-osgi-2.3.0.1.jar;C:\Users\Windows\.m2\repository\org\apache\sling\org.apache.sling.javax.activation\0.1.0\org.apache.sling.javax.activation-0.1.0.jar;C:\Users\Windows\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\Windows\.m2\repository\org\testng\testng\7.1.0\testng-7.1.0.jar;C:\Users\Windows\.m2\repository\com\beust\jcommander\1.72\jcommander-1.72.jar;C:\Users\Windows\.m2\repository\com\google\inject\guice\4.1.0\guice-4.1.0-no_aop.jar;C:\Users\Windows\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\Windows\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\Windows\.m2\repository\org\yaml\snakeyaml\1.21\snakeyaml-1.21.jar;C:\Users\Windows\.m2\repository\io\cucumber\cucumber-java\5.5.0\cucumber-java-5.5.0.jar;C:\Users\Windows\.m2\repository\io\cucumber\cucumber-core\5.5.0\cucumber-core-5.5.0.jar;C:\Users\Windows\.m2\repository\io\cucumber\cucumber-gherkin\5.5.0\cucumber-gherkin-5.5.0.jar;C:\Users\Windows\.m2\repository\io\cucumber\cucumber-gherkin-vintage\5.5.0\cucumber-gherkin-vintage-5.5.0.jar;C:\Users\Windows\.m2\repository\io\cucumber\tag-expressions\2.0.4\tag-expressions-2.0.4.jar;C:\Users\Windows\.m2\repository\io\cucumber\cucumber-expressions\8.3.1\cucumber-expressions-8.3.1.jar;C:\Users\Windows\.m2\repository\io\cucumber\datatable\3.3.0\datatable-3.3.0.jar;C:\Users\Windows\.m2\repository\io\cucumber\cucumber-plugin\5.5.0\cucumber-plugin-5.5.0.jar;C:\Users\Windows\.m2\repository\io\cucumber\docstring\5.5.0\docstring-5.5.0.jar;C:\Users\Windows\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\Windows\.m2\repository\io\cucumber\cucumber-testng\5.5.0\cucumber-testng-5.5.0.jar;C:\Users\Windows\.m2\repository\net\minidev\json-smart\1.0.9\json-smart-1.0.9.jar;C:\Users\Windows\.m2\repository\org\apache\poi\poi\3.17\poi-3.17.jar;C:\Users\Windows\.m2\repository\commons-codec\commons-codec\1.10\commons-codec-1.10.jar;C:\Users\Windows\.m2\repository\org\apache\commons\commons-collections4\4.1\commons-collections4-4.1.jar;C:\Users\Windows\.m2\repository\org\apache\poi\poi-ooxml\3.17\poi-ooxml-3.17.jar;C:\Users\Windows\.m2\repository\org\apache\poi\poi-ooxml-schemas\3.17\poi-ooxml-schemas-3.17.jar;C:\Users\Windows\.m2\repository\org\apache\xmlbeans\xmlbeans\2.6.0\xmlbeans-2.6.0.jar;C:\Users\Windows\.m2\repository\stax\stax-api\1.0.1\stax-api-1.0.1.jar;C:\Users\Windows\.m2\repository\com\github\virtuald\curvesapi\1.04\curvesapi-1.04.jar;C:\Users\Windows\.m2\repository\com\aventstack\extentreports\3.1.3\extentreports-3.1.3.jar;C:\Users\Windows\.m2\repository\org\freemarker\freemarker\2.3.23\freemarker-2.3.23.jar;C:\Users\Windows\.m2\repository\org\mongodb\mongodb-driver\3.3.0\mongodb-driver-3.3.0.jar;C:\Users\Windows\.m2\repository\org\mongodb\bson\3.3.0\bson-3.3.0.jar;C:\Users\Windows\.m2\repository\org\mongodb\mongodb-driver-core\3.3.0\mongodb-driver-core-3.3.0.jar;C:\Users\Windows\.m2\repository\org\jsoup\jsoup\1.9.2\jsoup-1.9.2.jar;C:\Users\Windows\.m2\repository\com\google\code\gson\gson\2.8.0\gson-2.8.0.jar;C:\Users\Windows\.m2\repository\commons-io\commons-io\1.3.2\commons-io-1.3.2.jar;C:\Users\Windows\.m2\repository\org\apache\maven\surefire\surefire-testng-utils\2.22.0\surefire-testng-utils-2.22.0.jar;C:\Users\Windows\.m2\repository\org\apache\maven\surefire\surefire-grouper\2.22.0\surefire-grouper-2.22.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Windows"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Windows\Downloads\Makaia-master-updated\Makaia-master"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Windows\AppData\Local\Temp\surefire975504808745529211\surefirebooter7822840997958941405.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.12+7-adhoc..jdk17u"/>
+    <property name="user.name" value="Windows"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="OpenLogic-OpenJDK"/>
+    <property name="localRepository" value="C:\Users\Windows\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://techsupport.roguewave.com/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Windows\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.12"/>
+    <property name="user.dir" value="C:\Users\Windows\Downloads\Makaia-master-updated\Makaia-master"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Users\Windows\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Windows\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\WireGuard;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Git\cmd;C:\Program Files\Git\usr\bin;C:\Users\Windows\Desktop\Maven\apache-maven-3.9.5-bin\apache-maven-3.9.5\bin;C:\Program Files\Kubernetes\Minikube;C:\minikube;C:\Program Files\Amazon\AWSCLIV2;C:\Program Files\nodejs;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Windows\Desktop\Arche health\Duplojit\duplo-jit_0.5.5_windows_amd64;C:\Program Files\DuploCloud;C:\Users\Windows\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\Windows\AppData\Local\Programs\Python\Python312;C:\Users\Windows\AppData\Local\Programs\Python\Launcher;C:\Users\Windows\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA Educational Edition 2022.2.2\bin;C:\Users\Windows\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Windows\AppData\Local\Programs\Azure Data Studio\bin;C:\Users\Windows\AppData\Roaming\npm;C:\Users\Windows\AppData\Local\Microsoft\WinGet\Packages\Helm.Helm_Microsoft.Winget.Source_8wekyb3d8bbwe\windows-amd64;C:\dev\duplo-jit_0.5.5_windows_amd64;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="OpenLogic"/>
+    <property name="java.vm.version" value="17.0.12+7-adhoc..jdk17u"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="createIncident" classname="tests.selenium.TC001_CreateIncident" time="18.842">
+    <failure type="java.lang.RuntimeException">java.lang.RuntimeException
+	at tests.selenium.TC001_CreateIncident.createIncident(TC001_CreateIncident.java:27)
+</failure>
+    <system-out><![CDATA[[TestNGContentHandler] [WARN] It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >" at the top of your file, otherwise TestNG may fail or not work as expected.
+./data/TC002.xlsx
+Loaded configuration for environment: dev
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+Starting ChromeDriver 130.0.6723.93 (dbcf0550c05ee0bd99b0349268818840f4b48136-refs/branch-heads/6723@{#1519}) on port 5588
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 5588.
+Nov 08, 2024 11:59:10 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="createIncident" classname="tests.selenium.TC002_CreateIncidentAndGetFromRest" time="19.686">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#filter&quot;}&#10;  (Session info: chrome=130.0.6723.116)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.0.0-alpha-4&apos;, revision: &apos;c2d955b49e&apos;&#10;System info: host: &apos;Ideas2IT&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.116, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\Windows\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59504}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a6461952cf0ae3d5fa9c0b23c7f755a3&#10;*** Element info: {Using=id, value=filter}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#filter"}
+  (Session info: chrome=130.0.6723.116)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ideas2IT', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.116, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\Windows\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59504}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a6461952cf0ae3d5fa9c0b23c7f755a3
+*** Element info: {Using=id, value=filter}
+	at tests.selenium.TC002_CreateIncidentAndGetFromRest.createIncident(TC002_CreateIncidentAndGetFromRest.java:33)
+</failure>
+    <system-out><![CDATA[./data/TC002.xlsx
+Loaded configuration for environment: dev
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 130.0.6723.93 (dbcf0550c05ee0bd99b0349268818840f4b48136-refs/branch-heads/6723@{#1519}) on port 50608
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 50608.
+Nov 08, 2024 11:59:39 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="createIncident" classname="tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium" time="20.939">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#filter&quot;}&#10;  (Session info: chrome=130.0.6723.116)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: &apos;4.0.0-alpha-4&apos;, revision: &apos;c2d955b49e&apos;&#10;System info: host: &apos;Ideas2IT&apos;, ip: &apos;192.168.1.3&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.116, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\Windows\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59553}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 65b9ad7458e31ef174a75e98289dcfe7&#10;*** Element info: {Using=id, value=filter}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#filter"}
+  (Session info: chrome=130.0.6723.116)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-4', revision: 'c2d955b49e'
+System info: host: 'Ideas2IT', ip: '192.168.1.3', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.116, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: C:\Users\Windows\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59553}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 65b9ad7458e31ef174a75e98289dcfe7
+*** Element info: {Using=id, value=filter}
+	at tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium.createIncident(TC003_CreateIncidentUsingRestAndVerifyUsingSelenium.java:43)
+</failure>
+    <system-out><![CDATA[./data/TC003.xlsx
+Loaded configuration for environment: dev
+Request method:	POST
+Request URI:	https://dev276551.service-now.com/api/now/table/incident
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 201 Created
+Server-Timing: sem_wait;dur=0, sesh_wait;dur=0
+Content-Encoding: gzip
+X-Is-Logged-In: true
+X-Transaction-ID: b4f563a883f1
+Location: https://dev276551.service-now.com/api/now/table/incident/7cf56f2c83351210183cffefeeaad3c4
+X-Content-Type-Options: nosniff
+Pragma: no-store,no-cache
+Cache-Control: no-cache,no-store,must-revalidate,max-age=-1
+Expires: 0
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Fri, 08 Nov 2024 06:30:19 GMT
+Keep-Alive: timeout=70
+Connection: keep-alive
+Server: ServiceNow
+Set-Cookie: JSESSIONID=F8B34794642A62992B3ABA27385A66EE; Path=/; HttpOnly; SameSite=None; Secure
+Set-Cookie: glide_user=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly; SameSite=None; Secure
+Set-Cookie: glide_user_session=; Max-Age=0; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Path=/; Secure; HttpOnly; SameSite=None; Secure
+Set-Cookie: glide_user_route=glide.b69115ee436e08d03fa79364a1570d7d; Max-Age=2147483647; Expires=Wed, 26-Nov-2092 09:44:27 GMT; Path=/; Secure; HttpOnly; SameSite=None; Secure
+Set-Cookie: glide_node_id_for_js=cde3e5cc399c8c81ac6c78bb0a66d8fbacc463747bcc404ea91c736b66e32fe7; Path=/; Secure; SameSite=None; Secure
+Set-Cookie: glide_session_store=70F563A883F11210183CFFEFEEAAD341; Max-Age=1800; Expires=Fri, 08-Nov-2024 07:00:20 GMT; Path=/; Secure; HttpOnly; SameSite=None; Secure
+Set-Cookie: BIGipServerpool_dev276551=1216519946.40254.0000; path=/; Httponly; Secure; SameSite=None; Secure
+Strict-Transport-Security: max-age=63072000; includeSubDomains
+
+{
+    "result": {
+        "parent": "",
+        "made_sla": "true",
+        "caused_by": "",
+        "watch_list": "",
+        "upon_reject": "cancel",
+        "sys_updated_on": "2024-11-08 06:30:20",
+        "child_incidents": "0",
+        "hold_reason": "",
+        "origin_table": "",
+        "task_effective_number": "INC0010021",
+        "approval_history": "",
+        "number": "INC0010021",
+        "resolved_by": "",
+        "sys_updated_by": "admin",
+        "opened_by": {
+            "link": "https://dev276551.service-now.com/api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441",
+            "value": "6816f79cc0a8016401c5a33be04be441"
+        },
+        "user_input": "",
+        "sys_created_on": "2024-11-08 06:30:20",
+        "sys_domain": {
+            "link": "https://dev276551.service-now.com/api/now/table/sys_user_group/global",
+            "value": "global"
+        },
+        "state": "1",
+        "route_reason": "",
+        "sys_created_by": "admin",
+        "knowledge": "false",
+        "order": "",
+        "calendar_stc": "",
+        "closed_at": "",
+        "cmdb_ci": "",
+        "delivery_plan": "",
+        "contract": "",
+        "impact": "3",
+        "active": "true",
+        "work_notes_list": "",
+        "business_service": "",
+        "business_impact": "",
+        "priority": "5",
+        "sys_domain_path": "/",
+        "rfc": "",
+        "time_worked": "",
+        "expected_start": "",
+        "opened_at": "2024-11-08 06:30:20",
+        "business_duration": "",
+        "group_list": "",
+        "work_end": "",
+        "caller_id": "",
+        "reopened_time": "",
+        "resolved_at": "",
+        "approval_set": "",
+        "subcategory": "",
+        "work_notes": "",
+        "universal_request": "",
+        "short_description": "",
+        "close_code": "",
+        "correlation_display": "",
+        "delivery_task": "",
+        "work_start": "",
+        "assignment_group": "",
+        "additional_assignee_list": "",
+        "business_stc": "",
+        "cause": "",
+        "description": "",
+        "origin_id": "",
+        "calendar_duration": "",
+        "close_notes": "",
+        "notify": "1",
+        "service_offering": "",
+        "sys_class_name": "incident",
+        "closed_by": "",
+        "follow_up": "",
+        "parent_incident": "",
+        "sys_id": "7cf56f2c83351210183cffefeeaad3c4",
+        "contact_type": "",
+        "reopened_by": "",
+        "incident_state": "1",
+        "urgency": "3",
+        "problem_id": "",
+        "company": "",
+        "reassignment_count": "0",
+        "activity_due": "",
+        "assigned_to": "",
+        "severity": "3",
+        "comments": "",
+        "approval": "not requested",
+        "sla_due": "",
+        "comments_and_work_notes": "",
+        "due_date": "",
+        "sys_mod_count": "0",
+        "reopen_count": "0",
+        "sys_tags": "",
+        "escalation": "0",
+        "upon_approval": "proceed",
+        "correlation_id": "",
+        "location": "",
+        "category": "inquiry"
+    }
+}
+Request method:	POST
+Request URI:	https://dev276551.service-now.com/api/now/table/incident
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 130.0.6723.93 (dbcf0550c05ee0bd99b0349268818840f4b48136-refs/branch-heads/6723@{#1519}) on port 30723
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 30723.
+Nov 08, 2024 12:00:07 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>

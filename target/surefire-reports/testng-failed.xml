@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" verbose="0">
+  <parameter name="env" value="dev"/>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="tests.selenium.TC001_CreateIncident">
+        <methods>
+          <include name="setValues"/>
+          <include name="beforeClass"/>
+          <include name="createIncident" invocation-numbers="0"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="afterMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.selenium.TC001_CreateIncident -->
+      <class name="tests.selenium.TC002_CreateIncidentAndGetFromRest">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="createIncident" invocation-numbers="0"/>
+          <include name="afterMethod"/>
+          <include name="setValues"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.selenium.TC002_CreateIncidentAndGetFromRest -->
+      <class name="tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium">
+        <methods>
+          <include name="createIncident" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="setValues"/>
+          <include name="afterMethod"/>
+          <include name="beforeSuite"/>
+        </methods>
+      </class> <!-- tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
