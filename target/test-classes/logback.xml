@@ -1,0 +1,40 @@
+<configuration>
+
+    <!-- Console Appender -->
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %highlight(%-5level) - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- File Appender -->
+    <appender name="file" class="ch.qos.logback.core.FileAppender">
+        <file>logs/testlog.log</file>
+        <append>true</append>
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root Logger -->
+    <root level="INFO">
+        <appender-ref ref="console" />
+        <appender-ref ref="file" />
+    </root>
+
+    <!-- Specific Logger for Library -->
+    <logger name="lib.factory" level="INFO">
+        <appender-ref ref="console" />
+    </logger>
+
+    <!-- Redirecting Java Util Logging -->
+    <logger name="java.util.logging" level="INFO">
+        <appender-ref ref="console" />
+    </logger>
+
+    <!-- Logger for Selenium -->
+    <logger name="org.openqa.selenium" level="WARN" >
+    <appender-ref ref="console" />
+    </logger>
+
+</configuration>
