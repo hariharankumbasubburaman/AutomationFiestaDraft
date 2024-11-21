@@ -17,66 +17,85 @@ import lib.browserfactory.BrowserType;
 import lib.utils.ConfigUtil;
 import lib.utils.DataInputProvider;
 import lib.utils.HTMLReporter;
+import common.CustomLogger;
 
 public class PreAndPost extends WebDriverServiceImpl{
-	
-	public String dataSheetName;	
-	
-	
+	private static final CustomLogger logger = CustomLogger.getInstance();
+
+	public String dataSheetName;
+
+
 	@BeforeSuite
 	public void beforeSuite() {
+		logger.info("Test Suite Initialization");
 		startReport();
 	}
-	
+
 	@BeforeClass
 	public void beforeClass() {
-		startTestCase(testCaseName, testDescription);		
+		logger.logTestCaseStart(testCaseName);
+		startTestCase(testCaseName, testDescription);
+		logger.info("Test Case Initialized");
 	}
 	
-	 @Parameters({"browser", "env"})
+	@Parameters({"browser", "env"})
 	@BeforeMethod
-	public void beforeMethod(String browser,String environment) throws FileNotFoundException, IOException {
-		
-		System.setProperty("env", environment); // Set the system property for environment
-        ConfigUtil.loadEnvironmentProperties();
-        String URL = ConfigUtil.getProperty("url");
+	public void beforeMethod(String browser, String environment) throws FileNotFoundException, IOException {
+		logger.debug("Starting test method setup");
+		logger.info("Setting up environment: " + environment);
+		System.setProperty("env", environment);
 
-		//for reports		
+		ConfigUtil.loadEnvironmentProperties();
+		String URL = ConfigUtil.getProperty("url");
+		String username = ConfigUtil.getProperty("username");
+		String password = decryptPassword(ConfigUtil.getProperty("password"));
+		String resources = ConfigUtil.getProperty("resources");
+
+		logger.info("Environment properties loaded");
+
+		// Set up RestAssured
+		RestAssured.baseURI = URL + "/" + resources + "/";
+		RestAssured.authentication = RestAssured.basic(username, password);
+		logger.info("RestAssured configured with base URL: " + RestAssured.baseURI);
+
+		// Browser initialization
+		logger.info("Initializing browser: " + browser);
+		if (browser.equalsIgnoreCase("chrome")) {
+			driver = BrowserFactory.createBrowser(BrowserType.CHROME, URL);
+		} else if (browser.equalsIgnoreCase("edge")) {
+			driver = BrowserFactory.createBrowser(BrowserType.EDGE, URL);
+		}
+
+		logger.info("Browser initialized successfully: " + browser);
+
+		// Reporting setup
 		startTestModule(nodes);
 		test.assignAuthor(authors);
 		test.assignCategory(category);
-		HTMLReporter.svcTest = test;	
-		
-		if(browser.equalsIgnoreCase("chrome"))
-			driver = BrowserFactory.createBrowser(BrowserType.CHROME,URL);
-		else if(browser.equalsIgnoreCase("edge"))
-			driver = BrowserFactory.createBrowser(BrowserType.EDGE,URL);
-		
-		
-        String username = ConfigUtil.getProperty("username");
-        String password = decryptPassword(ConfigUtil.getProperty("password"));
-        String resources = ConfigUtil.getProperty("resources");
-		
-		RestAssured.baseURI = URL+"/"+resources+"/";
-		//RestAssured.authentication = RestAssured.basic(prop.getProperty("username"), prop.getProperty("password"));
-		RestAssured.authentication = RestAssured.basic(username, password);
-	
+		HTMLReporter.svcTest = test;
+
+		logger.info("Test method setup completed");
 	}
 
 	@AfterMethod
 	public void afterMethod() {
+		logger.logTestCaseEnd(testCaseName);
+		logger.info("Test method teardown started");
 		closeActiveBrowser();
+		logger.info("Active browser closed");
 	}
 
 	@AfterSuite
 	public void afterSuite() {
 		endResult();
+		logger.info("Test Suite execution completed");
 	}
 
 	@DataProvider(name="fetchData", indices= {0})
 	public  Object[][] getData(){
-		return DataInputProvider.getSheet(dataSheetName);		
-	}	
+		logger.info("Fetching data for the test");
+		return DataInputProvider.getSheet(dataSheetName);
+	}
 
 	
 	

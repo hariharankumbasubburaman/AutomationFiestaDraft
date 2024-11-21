@@ -2,7 +2,7 @@
 
 <suite name="Suite">
 
-<parameter name="env" value="qa" />
+<parameter name="env" value="dev" />
 <parameter name="browser" value="chrome" />
 	<test name="Test">
 		<classes>

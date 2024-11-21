@@ -2,6 +2,7 @@ package tests.rest;
 
 import java.io.File;
 
+import common.CustomLogger;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -10,7 +11,7 @@ import lib.rest.RESTAssuredBase;
 
 
 public class TC001_CreateIncident extends RESTAssuredBase{
-
+	private final CustomLogger logger = CustomLogger.getInstance();
 	@BeforeTest
 	public void setValues() {
 		testCaseName = "Create a new Incident (REST)";
@@ -26,19 +27,19 @@ public class TC001_CreateIncident extends RESTAssuredBase{
 	@Test(dataProvider = "fetchData", groups = "regression")
 	public void createIncident(File file) {		
 		
-		// Post the request
+		logger.step(1, "Request Post URL table/incident");
 		Response response = postWithBodyAsFileAndUrl(file,"table/incident");
 				
-		//Verify the Content by Specific Key
+		logger.step(2, "Verify the key in the result content");
 		verifyContentWithKey(response, "result.short_description", "This is Rest Assured Automation framework - Makaia");
 		
-		// Verify the Content type
+		logger.step(3, "Verify that the Content-Type is JSON");
 		verifyContentType(response, "JSON");
 		
-		// Verify the response status code
+		logger.step(4, "Verify the response status code is 201");
 		verifyResponseCode(response, 201);	
 		
-		// Verify the response time
+		logger.step(5, "Verify the response time");
 		verifyResponseTime(response, 10000);
 		
 	}

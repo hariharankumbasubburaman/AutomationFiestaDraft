@@ -2,6 +2,8 @@ package tests.rest;
 
 import java.io.File;
 
+import common.CustomLogger;
+import org.slf4j.ILoggerFactory;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -10,7 +12,7 @@ import lib.rest.RESTAssuredBase;
 
 
 public class TC004_GetIncidents extends RESTAssuredBase{
-
+	private final CustomLogger logger = CustomLogger.getInstance();
 	@BeforeTest
 	public void setValues() {
 		testCaseName = "Get Existing Incident (REST)";
@@ -23,23 +25,23 @@ public class TC004_GetIncidents extends RESTAssuredBase{
 	}
 
 	@Test()
-	public void getIncidents() {		
-		
-		// Get the request
+	public void getIncidents() {
+
+		logger.step(1, "Request Post URL table/incident");
 		Response response = get("table/incident");
-				
-		// Verify the Content type
+
+		logger.step(2, "Verify that the Content-Type is JSON");
 		verifyContentType(response, "JSON");
-		
-		// Verify the response status code
-		verifyResponseCode(response, 200);	
-		
-		// Verify the response time
+
+		logger.step(3, "Verify the response status code is 200");
+		verifyResponseCode(response, 200);
+
+		logger.step(4, "Verify the response time");
 		verifyResponseTime(response, 10000);
-		
-		// Print the first incident number
+
+		logger.step(5, "Print the first incident number");
 		String number = (String) response.jsonPath().getList("result.number").get(0);
-		System.out.println("Number is "+number);
+		logger.info("Number is "+number);
 		reportRequest("Verified Existing Incident Number "+number, "INFO");
 		
 	}

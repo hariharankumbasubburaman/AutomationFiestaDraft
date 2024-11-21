@@ -3,6 +3,7 @@ package tests.rest;
 import java.io.File;
 import java.util.List;
 
+import common.CustomLogger;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -11,7 +12,7 @@ import lib.rest.RESTAssuredBase;
 
 
 public class TC002_DeleteFirstIncident extends RESTAssuredBase{
-
+	private final CustomLogger logger = CustomLogger.getInstance();
 	@BeforeTest
 	public void setValues() {
 
@@ -25,31 +26,30 @@ public class TC002_DeleteFirstIncident extends RESTAssuredBase{
 	}
 
 	@Test()
-	public void deleteIncident() {		
-		
-		// Post the request
-		Response response = get("table/incident");		
-			
-		// Verify the Content type
+	public void deleteIncident() {
+
+		logger.step(1, "Request Post URL table/incident");
+		Response response = get("table/incident");
+
+		logger.step(2, "Verify that the Content-Type is JSON");
 		verifyContentType(response, "JSON");
 		
-		// Verify the response status code
-		verifyResponseCode(response, 200);	
-		
-		// Verify the response time
+		logger.step(3, "Verify the response status code is 200");
+		verifyResponseCode(response, 200);
+
+		logger.step(4, "Verify the response time");
 		verifyResponseTime(response, 10000);
 		
-		// Get the Incidents
+		logger.step(5, " Get the Incidents in the response");
 		List<String> contents = getContentsWithKey(response, "result.sys_id");
-		
-		// Delete the first incident
-		response = delete("table/incident/"+contents.get(0));
-		
-		System.out.println(contents.get(0));
-		int statusCode = response.getStatusCode();
-		System.out.println(statusCode);
 
-		// Verify the response status code
+		logger.step(5, " Delete the first incident in the response");
+		response = delete("table/incident/"+contents.get(0));
+		logger.info("Deleted content is " + contents.get(0));
+		int statusCode = response.getStatusCode();
+		logger.info("Response status code: " + statusCode);
+
+		logger.step(6, "Verify the response status code is 204");
 		verifyResponseCode(response, 204);	
 		
 		
