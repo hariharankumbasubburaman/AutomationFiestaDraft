@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="8" passed="0" failed="4" skipped="0">
+<testng-results ignored="4" total="8" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-19T16:14:30 IST" name="Suite" finished-at="2024-11-19T16:17:06 IST" duration-ms="156509">
+  <suite started-at="2024-11-22T14:20:03 IST" name="Suite" finished-at="2024-11-22T14:22:21 IST" duration-ms="138936">
     <groups>
     </groups>
-    <test started-at="2024-11-19T16:14:30 IST" name="Test" finished-at="2024-11-19T16:17:06 IST" duration-ms="156509">
+    <test started-at="2024-11-22T14:20:03 IST" name="Test" finished-at="2024-11-22T14:22:21 IST" duration-ms="138936">
       <class name="tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium">
-        <test-method is-config="true" signature="setValues()[pri:0, instance:tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium@6bbe85a8]" started-at="2024-11-19T16:14:30 IST" name="setValues" finished-at="2024-11-19T16:14:30 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium@6bbe85a8]" started-at="2024-11-22T14:20:03 IST" name="setValues" finished-at="2024-11-22T14:20:03 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setValues -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium@6bbe85a8]" started-at="2024-11-19T16:15:39 IST" name="beforeClass" finished-at="2024-11-19T16:15:39 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium@6bbe85a8]" started-at="2024-11-22T14:20:46 IST" name="beforeClass" finished-at="2024-11-22T14:20:46 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium@6bbe85a8]" started-at="2024-11-19T16:15:39 IST" name="beforeMethod" finished-at="2024-11-19T16:15:46 IST" duration-ms="7340" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium@6bbe85a8]" started-at="2024-11-22T14:20:46 IST" name="beforeMethod" finished-at="2024-11-22T14:20:55 IST" duration-ms="9092" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -31,7 +31,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createIncident(java.lang.String)[pri:0, instance:tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium@6bbe85a8]" started-at="2024-11-19T16:15:46 IST" name="createIncident" data-provider="fetchData" finished-at="2024-11-19T16:15:56 IST" duration-ms="9243" status="FAIL">
+        <test-method signature="createIncident(java.lang.String)[pri:0, instance:tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium@6bbe85a8]" started-at="2024-11-22T14:20:55 IST" name="createIncident" data-provider="fetchData" finished-at="2024-11-22T14:21:28 IST" duration-ms="32736" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,65 +39,28 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.RuntimeException">
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException
-at lib.utils.HTMLReporter.reportRequest(HTMLReporter.java:99)
-at lib.rest.RESTAssuredBase.verifyResponseCode(RESTAssuredBase.java:164)
-at tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium.createIncident(TC003_CreateIncidentUsingRestAndVerifyUsingSelenium.java:36)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createIncident -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium@6bbe85a8]" started-at="2024-11-19T16:15:56 IST" name="afterMethod" finished-at="2024-11-19T16:15:56 IST" duration-ms="268" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium@6bbe85a8]" started-at="2024-11-22T14:21:28 IST" name="afterMethod" finished-at="2024-11-22T14:21:28 IST" duration-ms="227" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
       </class> <!-- tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium -->
       <class name="tests.selenium.TC001_CreateIncident">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.selenium.TC001_CreateIncident@53045c6c]" started-at="2024-11-19T16:14:29 IST" name="beforeSuite" finished-at="2024-11-19T16:14:30 IST" duration-ms="374" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.selenium.TC001_CreateIncident@53045c6c]" started-at="2024-11-22T14:20:02 IST" name="beforeSuite" finished-at="2024-11-22T14:20:03 IST" duration-ms="303" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="setValues()[pri:0, instance:tests.selenium.TC001_CreateIncident@53045c6c]" started-at="2024-11-19T16:14:30 IST" name="setValues" finished-at="2024-11-19T16:14:30 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:tests.selenium.TC001_CreateIncident@53045c6c]" started-at="2024-11-22T14:20:03 IST" name="setValues" finished-at="2024-11-22T14:20:03 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setValues -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.selenium.TC001_CreateIncident@53045c6c]" started-at="2024-11-19T16:14:30 IST" name="beforeClass" finished-at="2024-11-19T16:14:30 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.selenium.TC001_CreateIncident@53045c6c]" started-at="2024-11-22T14:20:03 IST" name="beforeClass" finished-at="2024-11-22T14:20:03 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:tests.selenium.TC001_CreateIncident@53045c6c]" started-at="2024-11-19T16:14:31 IST" name="beforeMethod" finished-at="2024-11-19T16:14:44 IST" duration-ms="13187" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:tests.selenium.TC001_CreateIncident@53045c6c]" started-at="2024-11-22T14:20:03 IST" name="beforeMethod" finished-at="2024-11-22T14:20:23 IST" duration-ms="19561" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -113,7 +76,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createIncident(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.selenium.TC001_CreateIncident@53045c6c]" started-at="2024-11-19T16:14:44 IST" name="createIncident" data-provider="fetchData" finished-at="2024-11-19T16:15:39 IST" duration-ms="54963" status="FAIL">
+        <test-method signature="createIncident(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.selenium.TC001_CreateIncident@53045c6c]" started-at="2024-11-22T14:20:23 IST" name="createIncident" data-provider="fetchData" finished-at="2024-11-22T14:20:46 IST" duration-ms="23227" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -136,9 +99,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               <![CDATA[java.lang.RuntimeException
 at lib.utils.HTMLReporter.reportStep(HTMLReporter.java:80)
 at lib.utils.HTMLReporter.reportStep(HTMLReporter.java:89)
-at lib.selenium.WebDriverServiceImpl.locateElement(WebDriverServiceImpl.java:52)
-at pages.selenium.CreateNewIncident.verifyIncidentCreation(CreateNewIncident.java:60)
-at tests.selenium.TC001_CreateIncident.createIncident(TC001_CreateIncident.java:37)
+at lib.selenium.WebDriverServiceImpl.clickElementInsideShadowRoot(WebDriverServiceImpl.java:162)
+at pages.selenium.HomePage.clickIncident(HomePage.java:46)
+at tests.selenium.TC001_CreateIncident.createIncident(TC001_CreateIncident.java:31)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -173,33 +136,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createIncident -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.selenium.TC001_CreateIncident@53045c6c]" started-at="2024-11-19T16:15:39 IST" name="afterMethod" finished-at="2024-11-19T16:15:39 IST" duration-ms="301" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.selenium.TC001_CreateIncident@53045c6c]" started-at="2024-11-22T14:20:46 IST" name="afterMethod" finished-at="2024-11-22T14:20:46 IST" duration-ms="255" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.selenium.TC001_CreateIncident@53045c6c]" started-at="2024-11-19T16:17:06 IST" name="afterSuite" finished-at="2024-11-19T16:17:08 IST" duration-ms="1370" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.selenium.TC001_CreateIncident@53045c6c]" started-at="2024-11-22T14:22:22 IST" name="afterSuite" finished-at="2024-11-22T14:22:23 IST" duration-ms="896" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- tests.selenium.TC001_CreateIncident -->
       <class name="tests.rest.TC004_GetIncidents">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-19T16:14:30 IST" name="beforeSuite" finished-at="2024-11-19T16:14:30 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-22T14:20:03 IST" name="beforeSuite" finished-at="2024-11-22T14:20:03 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-19T16:14:30 IST" name="beforeTest" finished-at="2024-11-19T16:14:30 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-22T14:20:03 IST" name="beforeTest" finished-at="2024-11-22T14:20:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="setValues()[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-19T16:14:30 IST" name="setValues" finished-at="2024-11-19T16:14:30 IST" depends-on-methods="lib.rest.PreAndTest.beforeTest" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-22T14:20:03 IST" name="setValues" finished-at="2024-11-22T14:20:03 IST" depends-on-methods="lib.rest.PreAndTest.beforeTest" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setValues -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-19T16:17:04 IST" name="beforeClass" finished-at="2024-11-19T16:17:04 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-19T16:17:04 IST" name="beforeMethod" finished-at="2024-11-19T16:17:04 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-22T14:22:18 IST" name="beforeMethod" finished-at="2024-11-22T14:22:18 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -210,74 +169,41 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="getIncidents()[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-19T16:17:04 IST" name="getIncidents" finished-at="2024-11-19T16:17:06 IST" duration-ms="2227" status="FAIL">
-          <exception class="java.lang.RuntimeException">
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException
-at lib.utils.HTMLReporter.reportRequest(HTMLReporter.java:99)
-at lib.rest.RESTAssuredBase.verifyResponseCode(RESTAssuredBase.java:164)
-at tests.rest.TC004_GetIncidents.getIncidents(TC004_GetIncidents.java:35)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-22T14:22:18 IST" name="beforeClass" finished-at="2024-11-22T14:22:18 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="getIncidents()[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-22T14:22:18 IST" name="getIncidents" finished-at="2024-11-22T14:22:21 IST" duration-ms="3688" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getIncidents -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-19T16:17:06 IST" name="afterClass" finished-at="2024-11-19T16:17:06 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-19T16:17:06 IST" name="afterMethod" finished-at="2024-11-19T16:17:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-22T14:22:21 IST" name="afterMethod" finished-at="2024-11-22T14:22:21 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-19T16:17:06 IST" name="afterTest" finished-at="2024-11-19T16:17:06 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-22T14:22:21 IST" name="afterTest" finished-at="2024-11-22T14:22:21 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-19T16:17:08 IST" name="afterSuite" finished-at="2024-11-19T16:17:08 IST" duration-ms="220" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-22T14:22:21 IST" name="afterClass" finished-at="2024-11-22T14:22:21 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:tests.rest.TC004_GetIncidents@5149d738]" started-at="2024-11-22T14:22:23 IST" name="afterSuite" finished-at="2024-11-22T14:22:23 IST" duration-ms="63" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
       </class> <!-- tests.rest.TC004_GetIncidents -->
       <class name="tests.selenium.TC002_CreateIncidentAndGetFromRest">
-        <test-method is-config="true" signature="setValues()[pri:0, instance:tests.selenium.TC002_CreateIncidentAndGetFromRest@3a7442c7]" started-at="2024-11-19T16:14:30 IST" name="setValues" finished-at="2024-11-19T16:14:30 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:tests.selenium.TC002_CreateIncidentAndGetFromRest@3a7442c7]" started-at="2024-11-22T14:20:03 IST" name="setValues" finished-at="2024-11-22T14:20:03 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setValues -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.selenium.TC002_CreateIncidentAndGetFromRest@3a7442c7]" started-at="2024-11-19T16:15:56 IST" name="beforeClass" finished-at="2024-11-19T16:15:56 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:tests.selenium.TC002_CreateIncidentAndGetFromRest@3a7442c7]" started-at="2024-11-22T14:21:28 IST" name="beforeClass" finished-at="2024-11-22T14:21:28 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:tests.selenium.TC002_CreateIncidentAndGetFromRest@3a7442c7]" started-at="2024-11-19T16:15:56 IST" name="beforeMethod" finished-at="2024-11-19T16:16:03 IST" duration-ms="6901" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String, java.lang.String)[pri:0, instance:tests.selenium.TC002_CreateIncidentAndGetFromRest@3a7442c7]" started-at="2024-11-22T14:21:29 IST" name="beforeMethod" finished-at="2024-11-22T14:21:38 IST" duration-ms="9870" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -293,7 +219,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createIncident(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.selenium.TC002_CreateIncidentAndGetFromRest@3a7442c7]" started-at="2024-11-19T16:16:03 IST" name="createIncident" data-provider="fetchData" finished-at="2024-11-19T16:17:04 IST" duration-ms="60916" status="FAIL">
+        <test-method signature="createIncident(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.selenium.TC002_CreateIncidentAndGetFromRest@3a7442c7]" started-at="2024-11-22T14:21:38 IST" name="createIncident" data-provider="fetchData" finished-at="2024-11-22T14:22:18 IST" duration-ms="39172" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -311,49 +237,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
               </value>
             </param>
           </params>
-          <exception class="java.lang.RuntimeException">
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException
-at lib.utils.HTMLReporter.reportStep(HTMLReporter.java:80)
-at lib.utils.HTMLReporter.reportStep(HTMLReporter.java:89)
-at lib.selenium.WebDriverServiceImpl.locateElement(WebDriverServiceImpl.java:52)
-at pages.selenium.CreateNewIncident.verifyIncidentCreation(CreateNewIncident.java:60)
-at tests.selenium.TC002_CreateIncidentAndGetFromRest.createIncident(TC002_CreateIncidentAndGetFromRest.java:44)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createIncident -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.selenium.TC002_CreateIncidentAndGetFromRest@3a7442c7]" started-at="2024-11-19T16:17:04 IST" name="afterMethod" finished-at="2024-11-19T16:17:04 IST" duration-ms="238" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:tests.selenium.TC002_CreateIncidentAndGetFromRest@3a7442c7]" started-at="2024-11-22T14:22:18 IST" name="afterMethod" finished-at="2024-11-22T14:22:18 IST" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

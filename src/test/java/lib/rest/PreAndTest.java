@@ -65,7 +65,7 @@ public class PreAndTest extends HTMLReporter{
 		
 		//RestAssured.baseURI = "https://"+prop.getProperty("server")+"/"+prop.getProperty("resources")+"/";
 		//RestAssured.baseURI = "https://"+prop.getProperty("server")+"/"+prop.getProperty("resources")+"/";
-		RestAssured.baseURI = URL+"/"+resources;
+		RestAssured.baseURI = URL+resources;
 		//RestAssured.authentication = RestAssured.basic(prop.getProperty("username"), prop.getProperty("password"));
 		RestAssured.authentication = RestAssured.basic(username, password);
 	}

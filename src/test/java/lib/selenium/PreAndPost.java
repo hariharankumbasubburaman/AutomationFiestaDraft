@@ -57,7 +57,7 @@ public class PreAndPost extends WebDriverServiceImpl{
         String password = decryptPassword(ConfigUtil.getProperty("password"));
         String resources = ConfigUtil.getProperty("resources");
 		
-		RestAssured.baseURI = URL+"/"+resources+"/";
+		RestAssured.baseURI = URL+resources+"/";
 		//RestAssured.authentication = RestAssured.basic(prop.getProperty("username"), prop.getProperty("password"));
 		RestAssured.authentication = RestAssured.basic(username, password);
 	

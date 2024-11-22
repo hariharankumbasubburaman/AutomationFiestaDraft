@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 4 failed,   </span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,25 +102,34 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.selenium.TC002_CreateIncidentAndGetFromRest" class="method navigator-link" hash-for-method="createIncident(incident, Abel, This is automated test from Makaia)">createIncident(incident, Abel, This is automated test from Makaia)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.selenium.TC001_CreateIncident" class="method navigator-link" hash-for-method="createIncident(incident, Abel, This is automated test from Makaia)">createIncident(incident, Abel, This is automated test from Makaia)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium" class="method navigator-link" hash-for-method="createIncident(incident)">createIncident(incident)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.selenium.TC001_CreateIncident" class="method navigator-link" hash-for-method="createIncident(incident, Abel, This is automated test from Makaia)">createIncident(incident, Abel, This is automated test from Makaia)</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.selenium.TC002_CreateIncidentAndGetFromRest" class="method navigator-link" hash-for-method="createIncident(incident, Abel, This is automated test from Makaia)">createIncident(incident, Abel, This is automated test from Makaia)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="failed.png" width="3%"/>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.rest.TC004_GetIncidents" class="method navigator-link" hash-for-method="getIncidents">getIncidents</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -132,54 +141,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.selenium.TC002_CreateIncidentAndGetFromRest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createIncident(incident, Abel, This is automated test from Makaia)">
-                  </a> <!-- createIncident(incident, Abel, This is automated test from Makaia) -->
-                  <span class="method-name">createIncident</span>
-                  <span class="parameters">(incident, Abel, This is automated test from Makaia)</span>
-                  <div class="stack-trace">java.lang.RuntimeException
-	at lib.utils.HTMLReporter.reportStep(HTMLReporter.java:80)
-	at lib.utils.HTMLReporter.reportStep(HTMLReporter.java:89)
-	at lib.selenium.WebDriverServiceImpl.locateElement(WebDriverServiceImpl.java:52)
-	at pages.selenium.CreateNewIncident.verifyIncidentCreation(CreateNewIncident.java:60)
-	at tests.selenium.TC002_CreateIncidentAndGetFromRest.createIncident(TC002_CreateIncidentAndGetFromRest.java:44)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createIncident(incident)">
-                  </a> <!-- createIncident(incident) -->
-                  <span class="method-name">createIncident</span>
-                  <span class="parameters">(incident)</span>
-                  <div class="stack-trace">java.lang.RuntimeException
-	at lib.utils.HTMLReporter.reportRequest(HTMLReporter.java:99)
-	at lib.rest.RESTAssuredBase.verifyResponseCode(RESTAssuredBase.java:164)
-	at tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium.createIncident(TC003_CreateIncidentUsingRestAndVerifyUsingSelenium.java:36)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
@@ -195,9 +156,9 @@
                   <div class="stack-trace">java.lang.RuntimeException
 	at lib.utils.HTMLReporter.reportStep(HTMLReporter.java:80)
 	at lib.utils.HTMLReporter.reportStep(HTMLReporter.java:89)
-	at lib.selenium.WebDriverServiceImpl.locateElement(WebDriverServiceImpl.java:52)
-	at pages.selenium.CreateNewIncident.verifyIncidentCreation(CreateNewIncident.java:60)
-	at tests.selenium.TC001_CreateIncident.createIncident(TC001_CreateIncident.java:37)
+	at lib.selenium.WebDriverServiceImpl.clickElementInsideShadowRoot(WebDriverServiceImpl.java:162)
+	at pages.selenium.HomePage.clickIncident(HomePage.java:46)
+	at tests.selenium.TC001_CreateIncident.createIncident(TC001_CreateIncident.java:31)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 27 stack frames
 </div> <!-- stack-trace -->
@@ -205,9 +166,41 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
+              <span class="class-name">tests.selenium.TC002_CreateIncidentAndGetFromRest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createIncident(incident, Abel, This is automated test from Makaia)">
+                  </a> <!-- createIncident(incident, Abel, This is automated test from Makaia) -->
+                  <span class="method-name">createIncident</span>
+                  <span class="parameters">(incident, Abel, This is automated test from Makaia)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createIncident(incident)">
+                  </a> <!-- createIncident(incident) -->
+                  <span class="method-name">createIncident</span>
+                  <span class="parameters">(incident)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">tests.rest.TC004_GetIncidents</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -216,17 +209,10 @@
                   <a name="getIncidents">
                   </a> <!-- getIncidents -->
                   <span class="method-name">getIncidents</span>
-                  <div class="stack-trace">java.lang.RuntimeException
-	at lib.utils.HTMLReporter.reportRequest(HTMLReporter.java:99)
-	at lib.rest.RESTAssuredBase.verifyResponseCode(RESTAssuredBase.java:164)
-	at tests.rest.TC004_GetIncidents.getIncidents(TC004_GetIncidents.java:35)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -288,24 +274,24 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'createIncident')
 data.setCell(0, 2, 'tests.selenium.TC002_CreateIncidentAndGetFromRest')
-data.setCell(0, 3, 60916);
+data.setCell(0, 3, 39172);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createIncident')
-data.setCell(1, 2, 'tests.selenium.TC001_CreateIncident')
-data.setCell(1, 3, 54963);
+data.setCell(1, 2, 'tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium')
+data.setCell(1, 3, 32736);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'createIncident')
-data.setCell(2, 2, 'tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium')
-data.setCell(2, 3, 9243);
+data.setCell(2, 2, 'tests.selenium.TC001_CreateIncident')
+data.setCell(2, 3, 23227);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'getIncidents')
 data.setCell(3, 2, 'tests.rest.TC004_GetIncidents')
-data.setCell(3, 3, 2227);
+data.setCell(3, 3, 3688);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -359,142 +345,136 @@ return data;
               <div class="chronological-class-name">tests.rest.TC004_GetIncidents</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
-                <span class="method-start">375 ms</span>
+                <span class="method-start">304 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">385 ms</span>
+                <span class="method-start">311 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-test before">
                 <span class="method-name">setValues</span>
-                <span class="method-start">387 ms</span>
+                <span class="method-start">312 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.selenium.TC001_CreateIncident</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setValues</span>
-                <span class="method-start">387 ms</span>
+                <span class="method-start">313 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.selenium.TC002_CreateIncidentAndGetFromRest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setValues</span>
-                <span class="method-start">388 ms</span>
+                <span class="method-start">313 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setValues</span>
-                <span class="method-start">388 ms</span>
+                <span class="method-start">314 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.selenium.TC001_CreateIncident</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">405 ms</span>
+                <span class="method-start">327 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome, qa)</span>
-                <span class="method-start">1152 ms</span>
+                <span class="method-start">1005 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">createIncident(incident, Abel, This is automated test from Makaia)</span>
-                <span class="method-start">14341 ms</span>
+                <span class="method-start">20566 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">69306 ms</span>
+                <span class="method-start">43848 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.selenium.TC003_CreateIncidentUsingRestAndVerifyUsingSelenium</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">69611 ms</span>
+                <span class="method-start">44110 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome, qa)</span>
-                <span class="method-start">69684 ms</span>
+                <span class="method-start">44182 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">createIncident(incident)</span>
-                <span class="method-start">77024 ms</span>
+                <span class="method-start">53274 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">86269 ms</span>
+                <span class="method-start">86010 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.selenium.TC002_CreateIncidentAndGetFromRest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">86540 ms</span>
+                <span class="method-start">86247 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(chrome, qa)</span>
-                <span class="method-start">86592 ms</span>
+                <span class="method-start">86294 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">createIncident(incident, Abel, This is automated test from Makaia)</span>
-                <span class="method-start">93493 ms</span>
+                <span class="method-start">96164 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">154412 ms</span>
+                <span class="method-start">135336 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.rest.TC004_GetIncidents</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">154650 ms</span>
+                <span class="method-start">135546 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(qa)</span>
-                <span class="method-start">154650 ms</span>
+                <span class="method-start">135546 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">getIncidents</span>
-                <span class="method-start">154650 ms</span>
+                <span class="method-start">135546 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">156892 ms</span>
+                <span class="method-start">139244 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">156892 ms</span>
+                <span class="method-start">139245 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">156892 ms</span>
+                <span class="method-start">139245 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.selenium.TC001_CreateIncident</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">157009 ms</span>
+                <span class="method-start">139628 ms</span>
               </div> <!-- configuration-suite after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.rest.TC004_GetIncidents</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">158379 ms</span>
+                <span class="method-start">140524 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
